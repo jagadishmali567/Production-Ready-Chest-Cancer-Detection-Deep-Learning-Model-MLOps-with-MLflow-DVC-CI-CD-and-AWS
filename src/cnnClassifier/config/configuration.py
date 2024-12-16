@@ -1,9 +1,10 @@
 import os
 from cnnClassifier.constants import *
-from cnnClassifier.utils.common import read_yaml, create_directories
+from cnnClassifier.utils.common import read_yaml, create_directories, save_json
 from cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                 PrepareBaseModelConfig,
-                                                TrainingConfig)
+                                                TrainingConfig,
+                                                EvaluationConfig)
 
 class ConfigurationManager:
     def __init__(
@@ -93,3 +94,21 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    
+    def get_evaluation_config(self) -> EvaluationConfig:
+        """
+        Retrieves the evaluation configuration.
+
+        Returns:
+            EvaluationConfig: An instance of EvaluationConfig with the specified settings.
+        """
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",  # Path to the trained model
+            training_data="artifacts/data_ingestion/Chest-CT-Scan-data",  # Path to the training data
+            mlflow_uri="https://dagshub.com/jagadishmali567/Production-Ready-Chest-Cancer-Detection-Deep-Learning-Model-MLOps-with-MLflow-DVC-CI-CD-and-AWS.mlflow",  # MLflow tracking URI
+            all_params=self.params,  # Parameters from the parameters YAML file
+            params_image_size=self.params.IMAGE_SIZE,  # Image size parameter
+            params_batch_size=self.params.BATCH_SIZE  # Batch size parameter
+        )
+        return eval_config

@@ -45,3 +45,19 @@ conda activate ccancer
 pip install -r requirements.txt
 ```
 
+
+### MLflow
+- [Documentation](https://mlflow.org/docs/latest/index.html)
+
+cmd
+```Bash
+mlflow ui
+```
+
+
+### Dagshub
+
+Run this to export as env variables:
+```Bash  
+export MLFLOW_TRACKING_URI=https://dagshub.com/jagadishmali567/Production-Ready-Chest-Cancer-Detection-Deep-Learning-Model-MLOps-with-MLflow-DVC-CI-CD-and-AWS.mlflow
+```

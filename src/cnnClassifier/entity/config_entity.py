@@ -55,4 +55,24 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
-        
+
+
+@dataclass(frozen=True)
+class EvaluationConfig:
+    """
+    Data class to hold configuration settings for model evaluation.
+
+    Attributes:
+        path_of_model (Path): Path to the trained model.
+        training_data (Path): Path to the training data used for the model.
+        all_params (dict): Dictionary containing all parameters used for model training and evaluation.
+        mlflow_uri (str): URI for MLflow tracking server to log experiments and results.
+        params_image_size (list): List containing the dimensions of the input images.
+        params_batch_size (int): Size of the batches for evaluation.
+    """
+    path_of_model: Path
+    training_data: Path
+    all_params: dict
+    mlflow_uri: str
+    params_image_size: list
+    params_batch_size: int
