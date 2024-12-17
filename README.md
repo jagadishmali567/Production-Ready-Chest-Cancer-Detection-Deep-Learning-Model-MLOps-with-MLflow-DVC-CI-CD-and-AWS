@@ -61,3 +61,16 @@ Run this to export as env variables:
 ```Bash  
 export MLFLOW_TRACKING_URI=https://dagshub.com/jagadishmali567/Production-Ready-Chest-Cancer-Detection-Deep-Learning-Model-MLOps-with-MLflow-DVC-CI-CD-and-AWS.mlflow
 ```
+
+### Data Version Control (DVC)
+**cmd**
+```Bash
+dvc init
+```
+```Bash
+dvc repro
+```
+```Bash
+dvc dag
+```
+
