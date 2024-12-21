@@ -139,3 +139,7 @@ Imagine we're working on a machine learning project to predict housing prices. H
 
 *By combining MLflow and DVC, we can effectively manage the entire machine learning lifecycle, from data versioning and experiment tracking to model deployment and collaboration.*
 
+
+## Automating Amazon Web Services(AWS) CI/CD Deployments through GitHub Actions
+
+### 1. Login to AWS Console.
