@@ -143,3 +143,4 @@ Imagine we're working on a machine learning project to predict housing prices. H
 ## Automating Amazon Web Services(AWS) CI/CD Deployments through GitHub Actions
 
 ### 1. Login to AWS Console.
+### 2. Create a new IAM user with programmatic access.
