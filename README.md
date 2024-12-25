@@ -170,3 +170,5 @@ Imagine we're working on a machine learning project to predict housing prices. H
 
 2. AmazonEC2FullAccess
 
+### 3. Create ECR repo to store/save docker image
+
