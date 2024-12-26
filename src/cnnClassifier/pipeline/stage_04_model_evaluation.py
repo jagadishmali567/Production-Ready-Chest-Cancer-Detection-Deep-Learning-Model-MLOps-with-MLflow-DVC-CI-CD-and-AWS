@@ -35,15 +35,15 @@ class EvaluationPipeline:
         evaluation.save_score()  # Save the evaluation scores
 
         # Initialize DagsHub for MLflow tracking
-        dagshub.init(repo_owner='jagadishmali567', 
-                     repo_name='Production-Ready-Chest-Cancer-Detection-Deep-Learning-Model-MLOps-with-MLflow-DVC-CI-CD-and-AWS', 
-                     mlflow=True)
+        #dagshub.init(repo_owner='jagadishmali567', 
+                     #repo_name='Production-Ready-Chest-Cancer-Detection-Deep-Learning-Model-MLOps-with-MLflow-DVC-CI-CD-and-AWS', 
+                     #mlflow=True)
 
         # Log the evaluation results into MLflow via DagsHub
-        with mlflow.start_run():
-            mlflow.log_params(eval_config.all_params)
-            mlflow.log_metrics({"loss": evaluation.score[0], "accuracy": evaluation.score[1]})
-            mlflow.keras.log_model(evaluation.model, "model", registered_model_name="VGG16Model")
+        #with mlflow.start_run():
+            #mlflow.log_params(eval_config.all_params)
+            #mlflow.log_metrics({"loss": evaluation.score[0], "accuracy": evaluation.score[1]})
+            #mlflow.keras.log_model(evaluation.model, "model", registered_model_name="VGG16Model")
 
 if __name__ == '__main__':
     try:
