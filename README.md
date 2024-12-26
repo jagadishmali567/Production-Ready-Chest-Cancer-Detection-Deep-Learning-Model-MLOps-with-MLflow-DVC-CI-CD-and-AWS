@@ -172,3 +172,6 @@ Imagine we're working on a machine learning project to predict housing prices. H
 
 ### 3. Create ECR repo to store/save docker image
 
+
+
+### 4. Create EC2 machine (Ubuntu)
