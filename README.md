@@ -1,5 +1,10 @@
 # Production-Ready Chest Cancer Detection: Deep Learning Model, MLOps with MLflow, DVC, CI/CD, and AWS
 
+**Final Outcome of this project:**
+
+![Final-Outcome](https://github.com/user-attachments/assets/d0108f8c-272c-4eea-9ee6-db4cfd2bb276)
+
+
 ### Project Workflows
 
 1. Update config.yaml
