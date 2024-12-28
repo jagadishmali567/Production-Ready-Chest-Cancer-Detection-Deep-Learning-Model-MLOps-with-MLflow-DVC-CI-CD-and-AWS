@@ -5,6 +5,11 @@
 ![Final-Outcome](https://github.com/user-attachments/assets/d0108f8c-272c-4eea-9ee6-db4cfd2bb276)
 
 
+**MLflow Model Experiment Tracking:**
+
+![mlflow-gif](https://github.com/user-attachments/assets/f9d94d68-db83-4a48-8251-8adcafb7c31a)
+
+
 ### Project Workflows
 
 1. Update config.yaml
